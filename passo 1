@@ -1,0 +1,58 @@
+# Automatizacao
+# pyautogui.click
+# pyautogui.press
+# pyautogui.hotkey
+# pyautogui.scroll
+# pyautogui.write
+
+# localizar posicao do mouse
+from os import read
+import pyautogui
+import time
+
+time.sleep(5)
+print(pyautogui.position())
+# pyautogui.position()
+
+
+# Espera um pouco para garantir que o navegador seja aberto
+pyautogui.PAUSE = 0.5
+
+# automatizar entrada no sistema
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
+pyautogui.press("enter")
+pyautogui.write('karoline34@gmail.com')
+pyautogui.press("tab")
+pyautogui.write("12345678")
+pyautogui.click(id='pgtpy-botao')
+time.sleep(3)
+pyautogui.click(id='codigo')
+
+# # importar arquivo
+# import pandas as pd
+
+# # # tabela
+# arquivo = "c:/Users/Amanda/Downloads/PRODUTOS.csv"
+# with open(f"{arquivo}", "rb") as ar:
+#     tabela = pd.read_csv(ar)
+# print(tabela)
+
+# # cadastrar produtos
+# for linha in tabela.index:
+#     entrar no site
+#     pegar id do campo de texto do site relacionado ao codigo
+#     digitar tabela.codigo
+    
+#     digitar tabela.marca
+#     digitar tabela.tipo
+#     digitar tabela.categoria
+#     digitar tabela.preco
+#     digitar tabela.custo
+
+#     print(linha)
+#     # codigo
+#     # click
+#     # write('codigo
